@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- OTHER NEEDED INFO LINKS-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>G21 Products Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet" type="text/css">
+
+<style>
+ /* MAIN CSS FOR THE PROJECT */
+* {
+margin: 0;
+padding: 0;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 20pt;
+
+}
+h2{
+    font-family: 'Chivo', sans-serif;
+    font-size: 15pt;
+
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 60pt;
+
+}
+  
+html,
+body {
+width: 100%;
+height: 100%;
+font-family: 'Chivo', sans-serif;
+}
+
+
+   
+
+strong {
+    font-size: 30pt;
+}
+
+a {
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+div.container {
+    padding: 25px 25px;
+}
+
+p.small-text {
+    font-size: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 5px 15px;
+}
+/* DEFAULT CSS END */
+
+/* HEADER CSS BEGIN */
+header#header {
+    position: fixed;
+    background-color: #EDA4BD;
+    width: 100vw;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header#header > nav#nav-bar {
+    padding-right: 50px;
+}
+
+nav#nav-bar > a.nav-link {
+   margin: 0 15px;
+}
+nav#nav-bar a:hover{
+  background:#7C606B;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  transition:background 500ms ease;
+}
+
+/* HEADER CSS END */
+
+/* SUBSCRIPTION area CSS BEGIN */
+section#subscription-area {
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+   background:url(https://lh3.googleusercontent.com/AyvbQizBh29pYOESne7YJeBEWEWBe-RJMlVXtQhKNfTuwJiNILyvJv8paAD1KjyKeUE4D78GDOnjF-Bd=w1080-h608-p-no-v0);
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: contain;
+    text-align: center;
+}
+
+section#subscription-area >
+div.container > 
+div.subscription-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.subscription-wrapper >
+form#form {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    margin: 15px 0;
+}
+
+form#form >
+input, button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5pt 0;
+    padding: 7px 5px;
+    font-family: inherit;
+}
+
+form#form >
+button {
+    background-color: #7C606B;
+    border:
+    1px 
+    solid
+    black;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    section#subscription-area {
+      height: 50vh;
+    }
+
+    section#subscription-area > 
+    div.container >
+    form#form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    section#subscription-area {
+      height: 60vh;
+    }
+
+    section#subscription-area > 
+    div.container >
+    form#form {
+        width: 100%;
+    }
+}
+
+/* SUBSCRIPTION area CSS END */
+
+/* FEATURE CSS BEGIN */
+section#feature-area > 
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.feature {
+    display: flex;
+    width: 65%;
+
+    margin: 15px 0;
+}
+
+div.feature > img {
+    height: 50px;
+    margin-right: 25px;
+}
+
+div.feature > div.feature-text {
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    div.feature {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.feature {
+        width: 100%;
+    }
+}
+/* FEATURE CSS END */
+
+/* VIDEO CSS BEGIN */
+section#video-area >
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.video-wrapper {
+    position: static;
+    overflow: hidden;
+
+    height: 50vh;
+    width: 50vw;
+}
+
+iframe#video {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    div.video-wrapper {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.video-wrapper {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/* VIDEO CSS END */
+
+/* PRICING CSS BEGIN */
+section#pricing-area >
+div.container >
+div.price-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.price {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: auto;
+
+    border-style: solid;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+div.price >
+div.price-title {
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #BFBFB2;
+
+    padding: 15px 15px;
+}
+
+div.price-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 15px 15px;
+}
+
+div.price-details >
+strong.price {
+    margin: 15px 0;
+    text-align: center;
+}
+
+div.price-details >
+button {
+    text-transform: uppercase;
+    background-color: #7C606B;;
+
+    font-family: inherit;
+    color: white;
+    border: 
+        .5px
+        solid
+        black;
+    border-radius: 3px;    
+    width: 65%
+}
+
+@media only screen and (max-width: 600px) {
+    div.price {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+
+        margin: 15pt 0;
+        height: auto;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.price {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+
+        margin: 15pt 0;
+        height: auto;
+
+    }
+}
+
+/* NOTES:
+div.price-details' padding is extending around it's main container.
+I don't understand why...
+*/
+
+/* PRICING CSS END */
+
+/* FOOTER CSS BEGIN */
+footer {
+    background-color: rgb(206, 206, 206);
+}
+
+footer >
+div.container >
+div.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer >
+div.container >
+div.footer-wrapper >
+p.footer-copyright {
+    margin-top: 10px;
+}
+
+ul.footer-links {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    footer >
+    div.container >
+    div.footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    footer >
+    div.container >
+    div.footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* FOOTER CSS END */
+</style>
+</head>
+<body>
+    <header id="header">
+        <img 
+        src="https://i.imgur.com/ac4Ssmf.png"
+        alt="Logo for header" 
+        id="header-img"
+        height="50px"
+        width="170px"
+        >
+        <nav id="nav-bar">
+            <a href="#feature-area" class="nav-link">Product Features</a>
+            <a href="#video-area" class="nav-link">Skincare Routine</a>
+            <a href="#pricing-area" class="nav-link">Pricing</a>
+        </nav>
+    </header>
+    <section id="subscription-area">
+        <div class="container">
+            <div class="subscription-wrapper">
+                <h1>Welcome to G21 Family!</h1>
+                <h2>Refreshing and Popular Cosmetics & Skin Care Products</h2>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input 
+                    id="email" 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    required>
+                    <button
+                    id="submit"
+                    type="submit" 
+                    value="SUBMIT" 
+
+                    formaction="https://www.freecodecamp.com/email-submit">Proceed</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="feature-area">
+        <div class="container">
+            <div class="feature">
+                <img 
+                src="https://i.imgur.com/ZQtgMdQ.png" 
+                alt="cute customized bullet point">
+                <div class="feature-text">
+                    <h3 class="feature-header">Premium Materials</h3>
+                    <p class="feature-details">
+                        G21 cosmetics and skincare products are made with the finest materials to ensure that all customers are satisfied and will leave good feedbacks!
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <img 
+                src="https://i.imgur.com/aRqIuh7.png" 
+                alt="stopwatch logo">
+                <div class="feature-text">
+                    <h3 class="feature-header">Fast Shipping</h3>
+                    <p class="feature-details">
+                        The G21 Family aims to cater to customers from around the country to deliver products in a timely and organized matter. All deliveries aims to ship and be received by customers in a span of a week to make sure that products are new and fresh.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <img 
+                src="https://i.imgur.com/7ov88hN.png" 
+                alt="quality assurance logo">
+                <div class="feature-text">
+                    <h3 class="feature-header">Quality Assurance</h3>
+                    <p class="feature-details">
+                        G21 makes sure that all cosmetics and skincare products are shipped with the highest quality possible. We make sure that all products are not damaged and that all products are hygenic.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-area">
+        <div class="container">
+            <div class="video-wrapper">
+                <iframe
+                id="video" 
+                src="https://www.youtube.com/embed/KH05bJUv034" 
+                frameborder="0" 
+                allowfullscreen></iframe>
+            </div>
+        </div>      
+    </section>
+    <section id="pricing-area">
+        <div class="container">
+            <div class="price-wrapper">
+                <div class="price">
+                    <div class="price-title">
+                        <h4>GLASS SKIN SET</h4>
+                    </div>
+                    <img 
+                src="https://cf.shopee.ph/file/1820cc61d2ac673c80b3b40b1a3b49a7" 
+                alt="Glass skin set">
+                    <div class="price-details">
+                        <strong class="price">₱550</strong>
+                        <ul class="price-inclusions" style="text-align: center">
+                            <li>Glass Skin Set</li>
+                            <li>Includes:</li>
+                            <li>Perfecting Skin Serum</li>
+                            <li>Rose Liquor Toner</li>
+                            <li>Kojic+Honey Oatmeal Soap</li>
+                        </ul>
+                        <button href="#">SELECT</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-title">
+                        <h4>SAKURA SKIN SET</h4>
+                    </div>
+                    <img 
+                src="https://cf.shopee.ph/file/0178f247a7f194973fee51953c8533d3" 
+                alt="Sakura skin set">
+                    <div class="price-details">
+                        <strong class="price">₱899</strong>
+                        <ul class="price-inclusions" style="text-align: center">
+                            <li>Sakura Skin Set Includes:</li>
+                            <li>Cherry Blossom Cleanser</li>
+                            <li>Japanese Blossom Serum</li>
+                            <li>Japanese Facial Mist</li>
+                            <li>Bentonite Clay Mask</li>
+                        </ul>
+                        <button href="#">SELECT</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-title">
+                        <h4>POWDER MATTE LIPSTICK SET</h4>
+                    </div>
+                    <img 
+                src="https://cf.shopee.ph/file/c0ae0003e7f06a9395997b179bff5b94" 
+                alt="Powder Matte Set">
+                    <div class="price-details">
+                        <strong class="price">₱500</strong>
+                       <ul class="price-inclusions" style="text-align: center">
+                            <li>Jam Shade Powder Matte</li>
+                            <li>Christine Shade Powder Matte</li>
+                            <li>Yumi Shade Powder Matte</li>
+                            <li>Ally Shade Powder Matte</li>
+                            <li>Sophia Shade Powder Matte</li>
+                        </ul>
+                        <button href="#">SELECT</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="footer-links">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Contact</li>
+                </ul>
+                <p class="small-text footer-copyright" >Copyright 2021, G21 Products, Alecz Jasmine Chan</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
